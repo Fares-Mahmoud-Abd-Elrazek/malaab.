@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaab</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./Style/all.min.css">
+    <link rel="stylesheet" href="./Style/bootstrap.min.css">
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Malaab<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="location" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pitches">Pitches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bookings">My bookings</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- end navbar -->
+
+    <!-- start Home -->
+    <section id="home">
+        <div class="container">
+            <header>
+                <h1>Book Your pitch in under a minutes.</h1>
+                <p>Football, padel and tennis courts near you. Pick a time, confirm, and play.</p>
+            </header>
+            <form id="searchForm" class="search-box p-3 p-md-4 rounded-4 bg-white shadow">
+                <div class="row g-3 align-items-end">
+                    <div class="col-12 col-md-3">
+                        <label for="sport" class="form-label fw-semibold small">Sport</label>
+                        <select id="sport" class="form-select">
+                            <option value="football">Football</option>
+                            <option value="padel">Padel</option>
+                            <option value="tennis">Tennis</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <label for="area" class="form-label fw-semibold small">Area</label>
+                        <select id="area" class="form-select">
+                            <option value="alexandria">Alexandria</option>
+                            <option value="smouha">Smouha</option>
+                            <option value="sidi gaber">Sidi Gaber</option>
+                            <option value="45 street">45 Street</option>
+                            <option value="falaky">Falaky</option>
+                            <option value="el dawly">ElDawly</option>
+                            <option value="el malaha ">El Malaha</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <label for="date" class="form-label fw-semibold small">Date</label>
+                        <input type="date" id="date" class="form-control">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <button type="submit" class="btn btn-search w-100">Search pitches</button>
+                    </div>
+                </div>
+
+            </form>
+
+            <section class="featured-pitches" aria-labelledby="featuredPitchesTitle">
+                <div class="featured-pitches-heading">
+                    <h2 id="featuredPitchesTitle">Featured Pitches</h2>
+                    <p>Find a great place to play near you.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card featured-pitch-card h-100">
+                            <img class="card-img-top pitch-card-image" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Football on a green grass pitch" loading="lazy" decoding="async">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4">Smouha Football Arena</h3>
+                                <p class="pitch-area">Smouha, Alexandria</p>
+                                <div class="pitch-card-footer mt-auto">
+                                    <p class="pitch-price"><strong>EGP 450</strong> / hour</p>
+                                    <button class="btn btn-pitch-view" type="button" data-select-pitch data-pitch-name="Smouha Football Arena" data-pitch-area="Smouha, Alexandria" data-pitch-sport="Football" data-pitch-price="450" data-pitch-features="Floodlights, Parking" data-pitch-description="A five-a-side football pitch in Smouha with evening floodlights."
+                                        aria-label="View Smouha Football Arena">View</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card featured-pitch-card h-100">
+                            <img class="card-img-top pitch-card-image" src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Basketball resting on an outdoor court" loading="lazy" decoding="async">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4">Sporting Club Court</h3>
+                                <p class="pitch-area">Sporting, Alexandria</p>
+                                <div class="pitch-card-footer mt-auto">
+                                    <p class="pitch-price"><strong>EGP 600</strong> / hour</p>
+                                    <button class="btn btn-pitch-view" type="button" data-select-pitch data-pitch-name="Sporting Club Court" data-pitch-area="Sporting, Alexandria" data-pitch-sport="Football" data-pitch-price="600" data-pitch-features="Floodlights, Parking" data-pitch-description="A full-size club court in Sporting, Alexandria."
+                                        aria-label="View Sporting Club Court">View</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card featured-pitch-card h-100">
+                            <img class="card-img-top pitch-card-image" src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Player practicing on an outdoor racket court" loading="lazy" decoding="async">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4">Sidi Gaber Padel Court</h3>
+                                <p class="pitch-area">Sidi Gaber, Alexandria</p>
+                                <div class="pitch-card-footer mt-auto">
+                                    <p class="pitch-price"><strong>EGP 350</strong> / hour</p>
+                                    <button class="btn btn-pitch-view" type="button" data-select-pitch data-pitch-name="Sidi Gaber Padel Court" data-pitch-area="Sidi Gaber, Alexandria" data-pitch-sport="Padel" data-pitch-price="350" data-pitch-features="Floodlights, Parking" data-pitch-description="An outdoor padel court in Sidi Gaber."
+                                        aria-label="View Sidi Gaber Padel Court">View</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- end Home -->
+
+    <!-- start Pitches section -->
+    <section id="pitches" class="pitches-section">
+        <svg class="pitch-svg-defs" aria-hidden="true" focusable="false">
+            <symbol id="pitch-field" viewBox="0 0 640 300">
+                <rect width="640" height="300" fill="#17683b" />
+                <rect x="40" y="14" width="560" height="272" fill="none" stroke="#b8d5c2" stroke-width="3" />
+                <line x1="320" y1="14" x2="320" y2="286" stroke="#b8d5c2" stroke-width="3" />
+                <circle cx="320" cy="150" r="52" fill="none" stroke="#b8d5c2" stroke-width="3" />
+                <rect x="40" y="78" width="72" height="144" fill="none" stroke="#b8d5c2" stroke-width="3" />
+                <rect x="40" y="112" width="28" height="76" fill="none" stroke="#b8d5c2" stroke-width="3" />
+                <rect x="528" y="78" width="72" height="144" fill="none" stroke="#b8d5c2" stroke-width="3" />
+                <rect x="572" y="112" width="28" height="76" fill="none" stroke="#b8d5c2" stroke-width="3" />
+            </symbol>
+        </svg>
+        <div class="pitch-catalog-container">
+            <h1 class="pitch-catalog-title">Find a pitch</h1>
+            <div class="pitch-catalog-layout">
+                <aside class="pitch-filters" aria-labelledby="pitchFiltersTitle">
+                    <h2 id="pitchFiltersTitle">Filters</h2>
+                    <form id="pitchFilterForm">
+                        <fieldset class="pitch-filter-group">
+                            <legend>Sport</legend>
+                            <label class="pitch-sport-option"><input type="checkbox" name="sport" value="football"> Football</label>
+                            <label class="pitch-sport-option"><input type="checkbox" name="sport" value="padel"> Padel</label>
+                            <label class="pitch-sport-option"><input type="checkbox" name="sport" value="tennis"> Tennis</label>
+                        </fieldset>
+                        <div class="pitch-filter-group">
+                            <label for="pitchAreaFilter">Area</label>
+                            <select class="form-select" id="pitchAreaFilter" name="area">
+                                <option value="all">All areas</option>
+                                <option value="Smouha">Smouha</option>
+                                <option value="Sidi Gaber">Sidi Gaber</option>
+                                <option value="Alexandria">Alexandria</option>
+                            </select>
+                        </div>
+                        <div class="pitch-filter-group">
+                            <label for="maxPitchPrice">Max price per hour <output id="maxPitchPriceLabel" for="maxPitchPrice">EGP 600</output></label>
+                            <input class="form-range" type="range" id="maxPitchPrice" name="maxPrice" min="250" max="600" step="50" value="600">
+                        </div>
+                        <button class="btn btn-filter-pitches" type="submit">Apply filters</button>
+                    </form>
+                </aside>
+
+                <div>
+                    <div class="pitch-listing-grid" id="pitchListingGrid">
+                        <article class="pitch-listing-card" data-sport="football" data-area="Smouha" data-price="400">
+                            <div class="pitch-listing-visual" aria-hidden="true"><svg viewBox="0 0 640 300"><use href="#pitch-field"></use></svg></div>
+                            <div class="pitch-listing-content">
+                                <h2>Green Park Arena</h2>
+                                <p class="pitch-listing-area">Smouha, Alexandria</p>
+                                <div class="pitch-listing-tags"><span>Football</span><span>Floodlights</span></div>
+                                <div class="pitch-listing-footer">
+                                    <p><strong>EGP 400</strong> / hour</p>
+                                    <button class="btn btn-listing-view" type="button" data-select-pitch data-pitch-name="Green Park Arena" data-pitch-area="Smouha, Alexandria" data-pitch-sport="Football" data-pitch-price="400" data-pitch-features="Floodlights, Parking, Cafeteria, Changing rooms"
+                                        data-pitch-description="A five-a-side artificial turf pitch with evening lighting and changing facilities." aria-label="View Green Park Arena">View</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="pitch-listing-card" data-sport="padel" data-area="Sidi Gaber" data-price="300">
+                            <div class="pitch-listing-visual" aria-hidden="true"><svg viewBox="0 0 640 300"><use href="#pitch-field"></use></svg></div>
+                            <div class="pitch-listing-content">
+                                <h2>Sku Padel Club</h2>
+                                <p class="pitch-listing-area">Sidi Gaber, Alexandria</p>
+                                <div class="pitch-listing-tags"><span>Padel</span><span>Floodlights</span></div>
+                                <div class="pitch-listing-footer">
+                                    <p><strong>EGP 300</strong> / hour</p>
+                                    <button class="btn btn-listing-view" type="button" data-select-pitch data-pitch-name="Sku Padel Club" data-pitch-area="Sidi Gaber, Alexandria" data-pitch-sport="Padel" data-pitch-price="300" data-pitch-features="Floodlights, Parking" data-pitch-description="An outdoor padel court in Sidi Gaber with floodlights."
+                                        aria-label="View Sku Padel Club">View</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="pitch-listing-card" data-sport="football" data-area="Alexandria" data-price="500">
+                            <div class="pitch-listing-visual" aria-hidden="true"><svg viewBox="0 0 640 300"><use href="#pitch-field"></use></svg></div>
+                            <div class="pitch-listing-content">
+                                <h2>Champions Court</h2>
+                                <p class="pitch-listing-area">Alexandria</p>
+                                <div class="pitch-listing-tags"><span>Football</span><span>Floodlights</span></div>
+                                <div class="pitch-listing-footer">
+                                    <p><strong>EGP 500</strong> / hour</p>
+                                    <button class="btn btn-listing-view" type="button" data-select-pitch data-pitch-name="Champions Court" data-pitch-area="Alexandria" data-pitch-sport="Football" data-pitch-price="500" data-pitch-features="Floodlights, Parking" data-pitch-description="A spacious football court in Alexandria, available for hourly booking."
+                                        aria-label="View Champions Court">View</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="pitch-listing-card" data-sport="tennis" data-area="Smouha" data-price="250">
+                            <div class="pitch-listing-visual" aria-hidden="true"><svg viewBox="0 0 640 300"><use href="#pitch-field"></use></svg></div>
+                            <div class="pitch-listing-content">
+                                <h2>Baseline Tennis</h2>
+                                <p class="pitch-listing-area">Smouha, Alexandria</p>
+                                <div class="pitch-listing-tags"><span>Tennis</span><span>Floodlights</span></div>
+                                <div class="pitch-listing-footer">
+                                    <p><strong>EGP 250</strong> / hour</p>
+                                    <button class="btn btn-listing-view" type="button" data-select-pitch data-pitch-name="Baseline Tennis" data-pitch-area="Smouha, Alexandria" data-pitch-sport="Tennis" data-pitch-price="250" data-pitch-features="Floodlights, Parking" data-pitch-description="An outdoor tennis court in Smouha, suitable for day and evening play."
+                                        aria-label="View Baseline Tennis">View</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="pitch-listing-card" data-sport="football" data-area="Alexandria" data-price="350">
+                            <div class="pitch-listing-visual" aria-hidden="true"><svg viewBox="0 0 640 300"><use href="#pitch-field"></use></svg></div>
+                            <div class="pitch-listing-content">
+                                <h2>Night League Pitch</h2>
+                                <p class="pitch-listing-area">Alexandria</p>
+                                <div class="pitch-listing-tags"><span>Football</span><span>Floodlights</span></div>
+                                <div class="pitch-listing-footer">
+                                    <p><strong>EGP 350</strong> / hour</p>
+                                    <button class="btn btn-listing-view" type="button" data-select-pitch data-pitch-name="Night League Pitch" data-pitch-area="Alexandria" data-pitch-sport="Football" data-pitch-price="350" data-pitch-features="Floodlights, Parking" data-pitch-description="A five-a-side football pitch in Alexandria with night lighting."
+                                        aria-label="View Night League Pitch">View</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="pitch-listing-card" data-sport="padel" data-area="Sidi Gaber" data-price="320">
+                            <div class="pitch-listing-visual" aria-hidden="true"><svg viewBox="0 0 640 300"><use href="#pitch-field"></use></svg></div>
+                            <div class="pitch-listing-content">
+                                <h2>Smash Padel</h2>
+                                <p class="pitch-listing-area">Sidi Gaber, Alexandria</p>
+                                <div class="pitch-listing-tags"><span>Padel</span><span>Floodlights</span></div>
+                                <div class="pitch-listing-footer">
+                                    <p><strong>EGP 320</strong> / hour</p>
+                                    <button class="btn btn-listing-view" type="button" data-select-pitch data-pitch-name="Smash Padel" data-pitch-area="Sidi Gaber, Alexandria" data-pitch-sport="Padel" data-pitch-price="320" data-pitch-features="Floodlights, Parking" data-pitch-description="A padel court in Sidi Gaber with evening lighting."
+                                        aria-label="View Smash Padel">View</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="pitch-listing-empty" id="pitchListingEmpty" hidden>No pitches match those filters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Pitches section -->
+
+    <!-- start My bookings section -->
+    <section id="bookings" class="booking-details-section">
+        <div class="container">
+            <h2>My bookings</h2>
+            <p class="section-breadcrumb" id="pitchBreadcrumb">Pitches / Green Park Arena</p>
+            <div class="pitch-layout">
+                <article class="pitch-detail-card">
+                    <div class="pitch-diagram" id="pitchDiagram" role="img" aria-label="Court layout for Green Park Arena">
+                        <svg viewBox="0 0 640 300" aria-hidden="true" focusable="false"><use href="#pitch-field"></use></svg>
+                    </div>
+                    <div class="pitch-detail-content">
+                        <h1 id="pitchDetailTitle">Green Park Arena</h1>
+                        <p class="pitch-detail-meta" id="pitchDetailMeta">Smouha, Alexandria · Football</p>
+                        <ul class="pitch-features" id="pitchDetailFeatures" aria-label="Pitch facilities">
+                            <li>Floodlights</li>
+                            <li>Parking</li>
+                            <li>Cafeteria</li>
+                            <li>Changing rooms</li>
+                        </ul>
+                        <p class="pitch-description" id="pitchDetailDescription">A five-a-side artificial turf pitch with evening lighting and changing facilities.</p>
+                    </div>
+                </article>
+
+                <aside class="booking-card" aria-labelledby="bookingTitle">
+                    <h2 id="bookingTitle">Book this pitch</h2>
+                    <form id="bookingForm" data-hourly-rate="400">
+                        <div class="booking-field">
+                            <label for="bookingDate">Date</label>
+                            <input class="form-control" type="date" id="bookingDate" required>
+                        </div>
+
+                        <fieldset class="booking-field">
+                            <legend>Pick a time</legend>
+                            <div class="time-slots">
+                                <button class="time-slot" type="button" aria-pressed="false">16:00</button>
+                                <button class="time-slot booked" type="button" disabled aria-label="17:00, already booked">17:00</button>
+                                <button class="time-slot" type="button" aria-pressed="false">18:00</button>
+                                <button class="time-slot is-selected" type="button" aria-pressed="true">19:00</button>
+                                <button class="time-slot booked" type="button" disabled aria-label="20:00, already booked">20:00</button>
+                                <button class="time-slot" type="button" aria-pressed="false">21:00</button>
+                                <button class="time-slot" type="button" aria-pressed="false">22:00</button>
+                                <button class="time-slot" type="button" aria-pressed="false">23:00</button>
+                            </div>
+                            <small class="booking-help">Crossed-out hours are already booked.</small>
+                        </fieldset>
+
+                        <div class="booking-field">
+                            <label for="bookingDuration">Duration</label>
+                            <select class="form-select" id="bookingDuration">
+                                <option value="1">1 hour</option>
+                                <option value="2">2 hours</option>
+                                <option value="3">3 hours</option>
+                            </select>
+                        </div>
+
+                        <div class="booking-summary">
+                            <div class="booking-price-line">
+                                <span id="bookingRateText">EGP 400 × 1 hour</span>
+                                <span id="bookingSubtotal">EGP 400</span>
+                            </div>
+                            <div class="booking-price-line booking-total">
+                                <span>Total</span>
+                                <strong id="bookingTotal">EGP 400</strong>
+                            </div>
+                            <button class="btn btn-booking-confirm" type="submit">Confirm booking</button>
+                            <p id="bookingStatus" role="status" aria-live="polite"></p>
+                        </div>
+                    </form>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- end My bookings section -->
+
+    <!-- Start footer section -->
+    <footer>
+        <div class="container">
+            <h2>Malaab<span>.</span></h2>
+            <p>Find your pitch, book your time, and get in the game.</p>
+            <div class="btnLinks">
+                <i class="fa-brands fab fa-facebook"></i>
+                <i class="fa-brands fab fab fa-google"></i>
+                <i class="fa-brands fab fab fab fa-twitter"></i>
+                <i class="fa-brands fab fab fab fab fa-instagram"></i>
+            </div>
+            <p class="copyright">Copyright 2026 company name &copy;.Designed by Fares.All rights reserved</p>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
